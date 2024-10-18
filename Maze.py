@@ -3,10 +3,11 @@ from Node import Node
 from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PIL import Image, ImageDraw
+from Fringe import Fringe
 
 
 class Maze:
-    def __init__(self, filename: str, fringe: Type[Union[StackFringe, QueueFringe]]) -> None:
+    def __init__(self, filename: str, fringe: Type[Fringe]) -> None:
         # Reading given maze
         self.__perceive_maze(filename)
         self.solution: Union[Tuple[List, List], None] = None
