@@ -1,9 +1,8 @@
 from typing import Tuple, List, Union, Type
 from Node import Node
-from StackFringe import StackFringe
-from QueueFringe import QueueFringe
 from PIL import Image, ImageDraw
-from Fringe import Fringe, HeuristicFringe
+from Fringe import Fringe
+from HeuristicFringe import HeuristicFringe
 
 
 class Maze:

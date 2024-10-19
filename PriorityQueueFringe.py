@@ -1,6 +1,6 @@
 import heapq
 from typing import Union
-from Fringe import HeuristicFringe
+from HeuristicFringe import HeuristicFringe
 from Node import Node
 
 

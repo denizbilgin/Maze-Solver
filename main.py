@@ -1,5 +1,4 @@
 import sys
-from Fringe import Fringe
 from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PriorityQueueFringe import PriorityQueueFringe
