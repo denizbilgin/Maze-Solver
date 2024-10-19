@@ -9,11 +9,8 @@ class HeuristicFringe(Fringe, ABC):
 
     def __init__(self):
         super().__init__()
-        self.goal: Union[Tuple[int, int], None] = None
+        self.goal_state: Union[Tuple[int, int], None] = None
         self.distance_type: Union[str, None] = None
-
-    def set_goal(self, goal: Tuple[int, int]):
-        self.goal = goal
 
     def set_distance_type(self, distance_type: str):
         distance_type = distance_type.lower().strip()
@@ -22,12 +19,12 @@ class HeuristicFringe(Fringe, ABC):
         self.distance_type = distance_type
 
     def distance(self, node: Node) -> float:
-        if self.goal is None:
+        if self.goal_state is None:
             raise ValueError("Goal is not set. You need to set goal first.")
 
         current_state = node.state
         x1, y1 = current_state
-        x2, y2 = self.goal
+        x2, y2 = self.goal_state
 
         if self.distance_type == "manhattan":
             return abs(x1 - x2) + abs(y1 - y2)

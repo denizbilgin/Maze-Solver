@@ -39,10 +39,10 @@ class Maze:
             for j in range(self.width):
                 try:
                     if contents[i][j] == "A":
-                        self.start = (i, j)
+                        self.start_state = (i, j)
                         row.append(False)
                     elif contents[i][j] == "B":
-                        self.goal = (i, j)
+                        self.goal_state = (i, j)
                         row.append(False)
                     elif contents[i][j] == " ":
                         row.append(False)
@@ -59,9 +59,9 @@ class Maze:
             for j, col in enumerate(row):
                 if col:
                     print("█", end="")
-                elif (i, j) == self.start:
+                elif (i, j) == self.start_state:
                     print("A", end="")
-                elif (i, j) == self.goal:
+                elif (i, j) == self.goal_state:
                     print("B", end="")
                 elif solution is not None and (i, j) in solution:
                     print("*", end="")
@@ -85,7 +85,7 @@ class Maze:
                 result.append((action, (r, c)))
         return result
 
-    def solve(self) -> None:
+    def solve(self, distance_type: str = "manhattan") -> None:
         """
         Finds a solution to maze, if one exists.
         :return: None
@@ -94,11 +94,10 @@ class Maze:
         self.num_explored = 0
 
         # Initializing the fringe
-        start = Node(self.start, None, None)
-
+        start = Node(self.start_state, None, None)
         if isinstance(self.fringe, HeuristicFringe):
-            self.fringe.set_goal(self.goal)
-            self.fringe.set_distance_type("manhattan")
+            self.fringe.goal_state = self.goal_state
+            self.fringe.set_distance_type(distance_type)
         self.fringe.add(start)
 
         # Initializing an empty explored set
@@ -114,7 +113,7 @@ class Maze:
 
             self.num_explored += 1
 
-            if node.state == self.goal:
+            if node.state == self.goal_state:
                 actions = []
                 cells = []
                 while node.parent is not None:
@@ -153,17 +152,17 @@ class Maze:
         for i, row in enumerate(self.walls):
             for j, col in enumerate(row):
 
-                if col:                     # Walls
+                if col:                           # Walls
                     fill = (40, 40, 40)
-                elif (i, j) == self.start:  # Start
+                elif (i, j) == self.start_state:  # Start
                     fill = (255, 0, 0)
-                elif (i, j) == self.goal:   # Goal
+                elif (i, j) == self.goal_state:   # Goal
                     fill = (0, 171, 28)
                 elif solution is not None and show_solution and (i, j) in solution:         # Solution
                     fill = (220, 235, 113)
                 elif solution is not None and show_explored and (i, j) in self.explored:    # Explored
                     fill = (212, 97, 85)
-                else:                       # Empty Cell
+                else:                                                                       # Empty Cell
                     fill = (237, 240, 252)
 
                 # Drawing cell

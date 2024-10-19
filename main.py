@@ -13,7 +13,7 @@ def is_pycharm():
 if __name__ == '__main__':
     if is_pycharm():
         fringe = PriorityQueueFringe
-        maze = Maze("mazes/maze1.txt", fringe)
+        maze = Maze("mazes/maze2.txt", fringe)
     elif len(sys.argv) > 1:
         fringes = {"StackFringe": StackFringe, "QueueFringe": QueueFringe, "PriorityQueueFringe": PriorityQueueFringe}
         if len(sys.argv) != 3:
