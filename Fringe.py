@@ -1,5 +1,5 @@
 from Node import Node
-from typing import Union, Tuple
+from typing import Union, Tuple, List
 from abc import ABC, abstractmethod
 
 
@@ -11,6 +11,10 @@ class Fringe(ABC):
     def add(self, node: Node) -> None:
         pass
 
+    @abstractmethod
+    def remove(self) -> Union[Node, None]:
+        pass
+
     def contains_state(self, state) -> bool:
         result: bool = any(node.state == state for node in self.fringe)
         return result
@@ -18,23 +22,31 @@ class Fringe(ABC):
     def is_empty(self) -> bool:
         return len(self.fringe) == 0
 
-    @abstractmethod
-    def remove(self) -> Union[Node, None]:
-        pass
-
 
 class HeuristicFringe(Fringe, ABC):
     def __init__(self):
         super().__init__()
-        self.goal = None
-        self.distance_type = None
+        self.fringe: List[Tuple[float, Node]] = []
+        self.goal: Union[Tuple[int, int], None] = None
+        self.distance_type: Union[str, None] = None
+
+    def contains_state(self, state) -> bool:
+        result: bool = any(node.state == state for _, node in self.fringe)
+        return result
 
     def set_goal(self, goal: Tuple[int, int]):
         self.goal = goal
 
-    def distance(self, node: Node) -> float:
-        current_state = node.state
+    def set_distance_type(self, distance_type: str):
+        if distance_type not in ["manhattan", "euclidean", "diagonal"]:
+            raise ValueError(f"Unknown distance type: {distance_type}")
+        self.distance_type = distance_type
 
+    def distance(self, node: Node) -> float:
+        if self.goal is None:
+            raise ValueError("Goal is not set.")
+
+        current_state = node.state
         x1, y1 = current_state
         x2, y2 = self.goal
 

@@ -3,13 +3,14 @@ from Node import Node
 from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PIL import Image, ImageDraw
-from Fringe import Fringe
+from Fringe import Fringe, HeuristicFringe
 
 
 class Maze:
     def __init__(self, filename: str, fringe: Type[Fringe]) -> None:
+        self.filename: str = filename
         # Reading given maze
-        self.__perceive_maze(filename)
+        self.__perceive_maze(self.filename)
         self.solution: Union[Tuple[List, List], None] = None
         self.num_explored: int = 0
         self.explored: Union[set, None] = None
@@ -95,6 +96,10 @@ class Maze:
 
         # Initializing the fringe
         start = Node(self.start, None, None)
+
+        if isinstance(self.fringe, HeuristicFringe):
+            self.fringe.set_goal(self.goal)
+            self.fringe.set_distance_type("manhattan")
         self.fringe.add(start)
 
         # Initializing an empty explored set
@@ -107,6 +112,7 @@ class Maze:
 
             # Choose a node from the fringe
             node = self.fringe.remove()
+
             self.num_explored += 1
 
             if node.state == self.goal:
