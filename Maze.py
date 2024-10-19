@@ -136,7 +136,9 @@ class Maze:
                     child = Node(state, node, action)
                     self.fringe.add(child)
 
-    def output_image(self, filename: str, show_solution: bool = True, show_explored: bool = False):
+    def output_image(self, show_solution: bool = True, show_explored: bool = False):
+        filename = "solutions/" + self.filename[6:11] + self.fringe.__class__.__name__ + "_" + str(self.num_explored) + ".png"
+
         cell_size: int = 50
         cell_border: int = 2
 
