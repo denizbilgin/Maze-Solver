@@ -26,12 +26,11 @@ class Fringe(ABC):
 class HeuristicFringe(Fringe, ABC):
     def __init__(self):
         super().__init__()
-        self.fringe: List[Tuple[float, Node]] = []
         self.goal: Union[Tuple[int, int], None] = None
         self.distance_type: Union[str, None] = None
 
     def contains_state(self, state) -> bool:
-        result: bool = any(node.state == state for _, node in self.fringe)
+        result: bool = any(node.state == state for node in self.fringe)
         return result
 
     def set_goal(self, goal: Tuple[int, int]):

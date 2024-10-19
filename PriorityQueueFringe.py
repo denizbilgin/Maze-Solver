@@ -9,15 +9,13 @@ class PriorityQueueFringe(HeuristicFringe):
         super().__init__()
 
     def add(self, node: Node) -> None:
-        priority = self.distance(node)
-        try:
-            heapq.heappush(self.fringe, (priority, node))
-        except TypeError:
-            print("A")
+        heuristic = self.distance(node)
+        node.heuristic = heuristic
+        heapq.heappush(self.fringe, node)
 
     def remove(self) -> Union[Node, None]:
         if self.is_empty():
             raise Exception("Fringe is empty.")
         else:
-            _, node = heapq.heappop(self.fringe)
+            node = heapq.heappop(self.fringe)
             return node

@@ -8,14 +8,13 @@ import os
 
 
 def is_pycharm():
-    # PyCharm, pydevd modülünü kullanır
     return 'PYCHARM_HOSTED' in os.environ or 'pydevd' in sys.modules
 
 
 if __name__ == '__main__':
     if is_pycharm():
-        fringe = PriorityQueueFringe
-        maze = Maze("maze2.txt", fringe)
+        fringe = StackFringe
+        maze = Maze("maze3.txt", fringe)
     elif len(sys.argv) > 1:
         fringes = {"StackFringe": StackFringe, "QueueFringe": QueueFringe, "PriorityQueueFringe": PriorityQueueFringe}
         if len(sys.argv) != 3:
@@ -33,4 +32,4 @@ if __name__ == '__main__':
     print("States Explored:", maze.num_explored)
     print("Solution:")
     maze.print_maze()
-    maze.output_image(f"{maze.filename.replace(".txt", "").replace("\\", "")}{fringe.__name__}.png", show_explored=True)
+    maze.output_image(f"{maze.filename.replace(".txt", "").replace(".\\", "")}{fringe.__name__}_{maze.num_explored}.png", show_explored=True)
