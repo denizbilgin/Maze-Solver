@@ -4,11 +4,11 @@ from Node import Node
 
 
 class IterativeDeepeningStackFringe(Fringe):
-    def __init__(self):
+    def __init__(self, depth_limit: int = 15):
         super().__init__()
-        self.depth_limit: Union[int, None] = None
+        self.__set_depth_limit(depth_limit)
 
-    def set_depth_limit(self, depth_limit: int):
+    def __set_depth_limit(self, depth_limit: int):
         if depth_limit < 1:
             raise ValueError("Depth limit must be set greater than 0.")
         self.depth_limit = depth_limit

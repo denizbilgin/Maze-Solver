@@ -5,8 +5,9 @@ from Node import Node
 
 
 class PriorityQueueFringe(HeuristicFringe):
-    def __init__(self):
+    def __init__(self, distance_type: str = "manhattan"):
         super().__init__()
+        self.set_distance_type(distance_type)
 
     def add(self, node: Node) -> None:
         node.heuristic = self.distance_to_goal(node)

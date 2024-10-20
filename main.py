@@ -7,28 +7,14 @@ from Maze import Maze
 import os
 
 
-def is_pycharm() -> bool:
-    return 'PYCHARM_HOSTED' in os.environ or 'pydevd' in sys.modules
-
-
 if __name__ == '__main__':
-    if is_pycharm():
-        fringe = IterativeDeepeningStackFringe
-        maze = Maze("mazes/maze2.txt", fringe)
-    elif len(sys.argv) > 1:
-        fringes = {"StackFringe": StackFringe, "QueueFringe": QueueFringe, "PriorityQueueFringe": PriorityQueueFringe}
-        if len(sys.argv) != 3:
-            sys.exit("Usage: python mazes/maze.py maze.txt StackFringe")
-        fringe = fringes[sys.argv[2]]
-        maze = Maze(sys.argv[1], fringe)
-        print(maze.filename)
-    else:
-        raise Exception("You need to run this file by command line or PyCharm.")
+    fringe = PriorityQueueFringe("euclidean")
+    maze = Maze("mazes/maze2.txt", fringe)
 
     print("Maze: ")
     maze.print_maze()
     print("Solving...")
-    maze.solve(depth_limit=30)
+    maze.solve()
     print("States Explored:", maze.num_explored)
     print("Solution:")
     maze.print_maze()

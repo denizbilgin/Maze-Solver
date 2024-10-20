@@ -7,14 +7,14 @@ from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
 
 
 class Maze:
-    def __init__(self, filename: str, fringe: Type[Fringe]) -> None:
+    def __init__(self, filename: str, fringe: Fringe) -> None:
         self.filename: str = filename
         # Reading given maze
         self.__perceive_maze(self.filename)     # Sets self.height, self.width, self.walls, self.start_state, self.goal_state
         self.solution: Union[Tuple[List, List], None] = None
         self.num_explored: int = 0
         self.explored: Union[set, None] = None
-        self.fringe = fringe()
+        self.fringe = fringe
 
     def __perceive_maze(self, filename: str) -> None:
         if ".txt" not in filename:
@@ -87,7 +87,7 @@ class Maze:
                 result.append((action, (r, c)))
         return result
 
-    def solve(self, distance_type: str = "manhattan", depth_limit: int = 5) -> None:
+    def solve(self) -> None:
         """
         Finds a solution to maze, if one exists.
         :return: None
@@ -99,9 +99,6 @@ class Maze:
         start = Node(self.start_state, None, None)
         if isinstance(self.fringe, HeuristicFringe):
             self.fringe.goal_state = self.goal_state
-            self.fringe.set_distance_type(distance_type)
-        elif isinstance(self.fringe, IterativeDeepeningStackFringe):
-            self.fringe.set_depth_limit(depth_limit)
         self.fringe.add(start)
 
         # Initializing an empty explored set
