@@ -3,6 +3,7 @@ from Node import Node
 from PIL import Image, ImageDraw
 from Fringe import Fringe
 from HeuristicFringe import HeuristicFringe
+from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
 
 
 class Maze:
@@ -86,7 +87,7 @@ class Maze:
                 result.append((action, (r, c)))
         return result
 
-    def solve(self, distance_type: str = "manhattan") -> None:
+    def solve(self, distance_type: str = "manhattan", depth_limit: int = 5) -> None:
         """
         Finds a solution to maze, if one exists.
         :return: None
@@ -99,6 +100,8 @@ class Maze:
         if isinstance(self.fringe, HeuristicFringe):
             self.fringe.goal_state = self.goal_state
             self.fringe.set_distance_type(distance_type)
+        elif isinstance(self.fringe, IterativeDeepeningStackFringe):
+            self.fringe.set_depth_limit(depth_limit)
         self.fringe.add(start)
 
         # Initializing an empty explored set

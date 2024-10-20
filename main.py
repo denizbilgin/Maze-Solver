@@ -2,6 +2,7 @@ import sys
 from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PriorityQueueFringe import PriorityQueueFringe
+from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
 from Maze import Maze
 import os
 
@@ -12,7 +13,7 @@ def is_pycharm() -> bool:
 
 if __name__ == '__main__':
     if is_pycharm():
-        fringe = PriorityQueueFringe
+        fringe = IterativeDeepeningStackFringe
         maze = Maze("mazes/maze2.txt", fringe)
     elif len(sys.argv) > 1:
         fringes = {"StackFringe": StackFringe, "QueueFringe": QueueFringe, "PriorityQueueFringe": PriorityQueueFringe}
@@ -27,7 +28,7 @@ if __name__ == '__main__':
     print("Maze: ")
     maze.print_maze()
     print("Solving...")
-    maze.solve()
+    maze.solve(depth_limit=30)
     print("States Explored:", maze.num_explored)
     print("Solution:")
     maze.print_maze()

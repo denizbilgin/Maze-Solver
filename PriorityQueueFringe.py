@@ -9,7 +9,7 @@ class PriorityQueueFringe(HeuristicFringe):
         super().__init__()
 
     def add(self, node: Node) -> None:
-        node.heuristic = self.distance(node)
+        node.heuristic = self.distance_to_goal(node)
         self.fringe.append(node)
         self.fringe.sort(key=lambda x: x.heuristic)
 

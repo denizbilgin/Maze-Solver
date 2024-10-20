@@ -18,7 +18,7 @@ class HeuristicFringe(Fringe, ABC):
             raise ValueError(f"Unknown distance type: {distance_type}. You can use these distances: {self.__distance_types}")
         self.distance_type = distance_type
 
-    def distance(self, node: Node) -> float:
+    def distance_to_goal(self, node: Node) -> float:
         if self.goal_state is None:
             raise ValueError("Goal is not set. You need to set goal first.")
 
