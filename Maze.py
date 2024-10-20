@@ -9,7 +9,7 @@ class Maze:
     def __init__(self, filename: str, fringe: Type[Fringe]) -> None:
         self.filename: str = filename
         # Reading given maze
-        self.__perceive_maze(self.filename)
+        self.__perceive_maze(self.filename)     # Sets self.height, self.width, self.walls, self.start_state, self.goal_state
         self.solution: Union[Tuple[List, List], None] = None
         self.num_explored: int = 0
         self.explored: Union[set, None] = None
@@ -53,7 +53,8 @@ class Maze:
             self.walls.append(row)
 
     def print_maze(self) -> None:
-        solution: Union[List, None] = self.solution[1] if self.solution is not None else None
+        solution: Union[List[Tuple[int, int]], None] = self.solution[1] if self.solution is not None else None
+
         print()
         for i, row in enumerate(self.walls):
             for j, col in enumerate(row):
@@ -114,8 +115,8 @@ class Maze:
             self.num_explored += 1
 
             if node.state == self.goal_state:
-                actions = []
-                cells = []
+                actions: list[str] = []
+                cells: list[Tuple[int, int]] = []
                 while node.parent is not None:
                     actions.append(node.action)
                     cells.append(node.state)
@@ -148,7 +149,7 @@ class Maze:
         )
         draw = ImageDraw.Draw(img)
 
-        solution = self.solution[1] if self.solution is not None else None
+        solution: Union[List[Tuple[int, int]], None] = self.solution[1] if self.solution is not None else None
         for i, row in enumerate(self.walls):
             for j, col in enumerate(row):
 

@@ -5,14 +5,14 @@ from Node import Node
 
 
 class HeuristicFringe(Fringe, ABC):
-    __distance_types = ["manhattan", "euclidean", "diagonal"]
+    __distance_types: list[str] = ["manhattan", "euclidean", "diagonal"]
 
     def __init__(self):
         super().__init__()
         self.goal_state: Union[Tuple[int, int], None] = None
         self.distance_type: Union[str, None] = None
 
-    def set_distance_type(self, distance_type: str):
+    def set_distance_type(self, distance_type: str) -> None:
         distance_type = distance_type.lower().strip()
         if distance_type not in self.__distance_types:
             raise ValueError(f"Unknown distance type: {distance_type}. You can use these distances: {self.__distance_types}")

@@ -6,7 +6,7 @@ from Maze import Maze
 import os
 
 
-def is_pycharm():
+def is_pycharm() -> bool:
     return 'PYCHARM_HOSTED' in os.environ or 'pydevd' in sys.modules
 
 
