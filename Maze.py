@@ -3,7 +3,7 @@ from Node import Node
 from PIL import Image, ImageDraw
 from Fringe import Fringe
 from HeuristicFringe import HeuristicFringe
-from IterativeDeepeningSearch import IterativeDeepeningSearch
+from HandSearch import HandSearch
 
 
 class Maze:
@@ -80,6 +80,15 @@ class Maze:
             ("left",  (row, col - 1)),
             ("right", (row, col + 1))
         ]
+
+        # Update candidates if hand search algorithms are used
+        if isinstance(self.fringe, HandSearch):
+            candidates = [
+                ("left", (row, col - 1)),
+                ("down", (row + 1, col)),
+                ("up", (row - 1, col)),
+                ("right", (row, col + 1))
+            ]
 
         result: List[Tuple[str, Tuple[int, int]]] = []
         for action, (r, c) in candidates:
