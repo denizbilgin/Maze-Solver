@@ -13,7 +13,7 @@ class HeuristicFringe(Fringe, ABC):
         self.distance_type: Union[str, None] = None
 
     def set_distance_type(self, distance_type: str) -> None:
-        distance_type = distance_type.lower().strip()
+        distance_type = distance_type.lower()
         if distance_type not in self.__distance_types:
             raise ValueError(f"Unknown distance type: {distance_type}. You can use these distances: {self.__distance_types}")
         self.distance_type = distance_type

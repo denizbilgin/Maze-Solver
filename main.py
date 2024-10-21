@@ -1,4 +1,5 @@
 import sys
+from AStarPriorityQueueFringe import AStarPriorityQueueFringe
 from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PriorityQueueFringe import PriorityQueueFringe
@@ -8,8 +9,8 @@ import os
 
 
 if __name__ == '__main__':
-    fringe = PriorityQueueFringe("euclidean")
-    maze = Maze("mazes/maze2.txt", fringe)
+    fringe = AStarPriorityQueueFringe()
+    maze = Maze("mazes/maze3.txt", fringe)
 
     print("Maze: ")
     maze.print_maze()
