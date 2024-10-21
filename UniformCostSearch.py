@@ -3,7 +3,11 @@ from Fringe import Fringe
 from Node import Node
 
 
-class UniformCostPriorityQueueFringe(Fringe):
+class UniformCostSearch(Fringe):
+    """
+    Uniform cost search algorithm that uses priority queue.
+    The algorithm is among the uninformed search algorithms.
+    """
     def __init__(self):
         super().__init__()
 

@@ -3,7 +3,7 @@ from Node import Node
 from PIL import Image, ImageDraw
 from Fringe import Fringe
 from HeuristicFringe import HeuristicFringe
-from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
+from IterativeDeepeningSearch import IterativeDeepeningSearch
 
 
 class Maze:
@@ -136,7 +136,7 @@ class Maze:
                     self.fringe.add(child)
 
     def output_image(self, show_solution: bool = True, show_explored: bool = False):
-        filename = "solutions/" + self.filename[6:11] + self.fringe.__class__.__name__ + "_" + str(self.num_explored) + ".png"
+        filename = "solutions/" + self.filename[6:11] + "_" + self.fringe.__class__.__name__ + "_" + str(self.num_explored) + ".png"
 
         cell_size: int = 50
         cell_border: int = 2

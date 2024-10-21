@@ -3,7 +3,11 @@ from typing import Union
 from Fringe import Fringe
 
 
-class StackFringe(Fringe):
+class DepthFirstSearch(Fringe):
+    """
+    Depth-first search algorithm that uses stack.
+    The algorithm is among the uninformed search algorithms.
+    """
     def __init__(self):
         super().__init__()
 

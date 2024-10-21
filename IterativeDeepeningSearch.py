@@ -3,7 +3,11 @@ from Fringe import Fringe
 from Node import Node
 
 
-class IterativeDeepeningStackFringe(Fringe):
+class IterativeDeepeningSearch(Fringe):
+    """
+    Iterative deepening algorithm that uses stack.
+    The algorithm is among the uninformed search algorithms.
+    """
     def __init__(self, depth_limit: int = 15):
         super().__init__()
         self.__set_depth_limit(depth_limit)

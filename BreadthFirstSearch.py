@@ -3,7 +3,11 @@ from Node import Node
 from Fringe import Fringe
 
 
-class QueueFringe(Fringe):
+class BreadthFirstSearch(Fringe):
+    """
+    Breadth-first search algorithm that uses queue.
+    The algorithm is among the uninformed search algorithms.
+    """
     def __init__(self):
         super().__init__()
 

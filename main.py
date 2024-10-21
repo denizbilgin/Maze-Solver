@@ -1,17 +1,15 @@
-import sys
-from AStarPriorityQueueFringe import AStarPriorityQueueFringe
-from StackFringe import StackFringe
-from QueueFringe import QueueFringe
-from PriorityQueueFringe import PriorityQueueFringe
-from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
-from UniformCostPriorityQueueFringe import UniformCostPriorityQueueFringe
-from BeamPriorityQueueFringe import BeamPriorityQueueFringe
+from AStarSearch import AStarSearch
+from DepthFirstSearch import DepthFirstSearch
+from BreadthFirstSearch import BreadthFirstSearch
+from GreedyBestFirstSearch import GreedyBestFirstSearch
+from IterativeDeepeningSearch import IterativeDeepeningSearch
+from UniformCostSearch import UniformCostSearch
+from BeamSearch import BeamSearch
 from Maze import Maze
-import os
 
 
 if __name__ == '__main__':
-    fringe = BeamPriorityQueueFringe()
+    fringe = UniformCostSearch()
     maze = Maze("mazes/maze3.txt", fringe)
 
     print("Maze: ")
