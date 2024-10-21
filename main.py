@@ -4,12 +4,13 @@ from StackFringe import StackFringe
 from QueueFringe import QueueFringe
 from PriorityQueueFringe import PriorityQueueFringe
 from IterativeDeepeningStackFringe import IterativeDeepeningStackFringe
+from UniformCostPriorityQueueFringe import UniformCostPriorityQueueFringe
 from Maze import Maze
 import os
 
 
 if __name__ == '__main__':
-    fringe = AStarPriorityQueueFringe()
+    fringe = UniformCostPriorityQueueFringe()
     maze = Maze("mazes/maze3.txt", fringe)
 
     print("Maze: ")
