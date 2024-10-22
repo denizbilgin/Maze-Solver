@@ -18,106 +18,106 @@ Each algorithm is carefully tested and verified for correctness. In the `solutio
 ## Maze 1 Solutions
 
 ### Depth-First Search (DFS)
-![DFS Solution for Maze 1](solutions/maze1_dfs.png)
+![DFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dfs.png)
 
 ### Breadth-First Search (BFS)
-![BFS Solution for Maze 1](solutions/maze1_bfs.png)
+![BFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_bfs.png)
 
 ### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 1](solutions/maze1_dijkstra.png)
+![Dijkstra's Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dijkstra.png)
 
 ### A* Algorithm
-![A* Solution for Maze 1](solutions/maze1_a_star.png)
+![A* Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_a_star.png)
 
 ### Greedy Best-First Search
-![Greedy BFS Solution for Maze 1](solutions/maze1_greedy.png)
+![Greedy BFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_greedy.png)
 
 ### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 1](solutions/maze1_recursive.png)
+![Recursive Backtracking Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_recursive.png)
 
 ### Wall Follower Algorithm
-![Wall Follower Solution for Maze 1](solutions/maze1_wall_follower.png)
+![Wall Follower Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_wall_follower.png)
 
 ### Dead-End Filling
-![Dead-End Filling Solution for Maze 1](solutions/maze1_dead_end_filling.png)
+![Dead-End Filling Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dead_end_filling.png)
 
 ## Maze 2 Solutions
 
 ### Depth-First Search (DFS)
-![DFS Solution for Maze 2](solutions/maze2_dfs.png)
+![DFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dfs.png)
 
 ### Breadth-First Search (BFS)
-![BFS Solution for Maze 2](solutions/maze2_bfs.png)
+![BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_bfs.png)
 
 ### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 2](solutions/maze2_dijkstra.png)
+![Dijkstra's Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dijkstra.png)
 
 ### A* Algorithm
-![A* Solution for Maze 2](solutions/maze2_a_star.png)
+![A* Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_a_star.png)
 
 ### Greedy Best-First Search
-![Greedy BFS Solution for Maze 2](solutions/maze2_greedy.png)
+![Greedy BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_greedy.png)
 
 ### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 2](solutions/maze2_recursive.png)
+![Recursive Backtracking Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_recursive.png)
 
 ### Wall Follower Algorithm
-![Wall Follower Solution for Maze 2](solutions/maze2_wall_follower.png)
+![Wall Follower Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_wall_follower.png)
 
 ### Dead-End Filling
-![Dead-End Filling Solution for Maze 2](solutions/maze2_dead_end_filling.png)
+![Dead-End Filling Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dead_end_filling.png)
 
 ## Maze 3 Solutions
 
 ### Depth-First Search (DFS)
-![DFS Solution for Maze 3](solutions/maze3_dfs.png)
+![DFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dfs.png)
 
 ### Breadth-First Search (BFS)
-![BFS Solution for Maze 3](solutions/maze3_bfs.png)
+![BFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_bfs.png)
 
 ### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 3](solutions/maze3_dijkstra.png)
+![Dijkstra's Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dijkstra.png)
 
 ### A* Algorithm
-![A* Solution for Maze 3](solutions/maze3_a_star.png)
+![A* Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_a_star.png)
 
 ### Greedy Best-First Search
-![Greedy BFS Solution for Maze 3](solutions/maze3_greedy.png)
+![Greedy BFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_greedy.png)
 
 ### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 3](solutions/maze3_recursive.png)
+![Recursive Backtracking Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_recursive.png)
 
 ### Wall Follower Algorithm
-![Wall Follower Solution for Maze 3](solutions/maze3_wall_follower.png)
+![Wall Follower Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_wall_follower.png)
 
 ### Dead-End Filling
-![Dead-End Filling Solution for Maze 3](solutions/maze3_dead_end_filling.png)
+![Dead-End Filling Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dead_end_filling.png)
 
 ## Maze 4 Solutions
 
 ### Depth-First Search (DFS)
-![DFS Solution for Maze 4](solutions/maze4_dfs.png)
+![DFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dfs.png)
 
 ### Breadth-First Search (BFS)
-![BFS Solution for Maze 4](solutions/maze4_bfs.png)
+![BFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_bfs.png)
 
 ### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 4](solutions/maze4_dijkstra.png)
+![Dijkstra's Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dijkstra.png)
 
 ### A* Algorithm
-![A* Solution for Maze 4](solutions/maze4_a_star.png)
+![A* Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_a_star.png)
 
 ### Greedy Best-First Search
-![Greedy BFS Solution for Maze 4](solutions/maze4_greedy.png)
+![Greedy BFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_greedy.png)
 
 ### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 4](solutions/maze4_recursive.png)
+![Recursive Backtracking Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_recursive.png)
 
 ### Wall Follower Algorithm
-![Wall Follower Solution for Maze 4](solutions/maze4_wall_follower.png)
+![Wall Follower Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_wall_follower.png)
 
 ### Dead-End Filling
-![Dead-End Filling Solution for Maze 4](solutions/maze4_dead_end_filling.png)
+![Dead-End Filling Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dead_end_filling.png)
 
 ## How to Run the Code
 
