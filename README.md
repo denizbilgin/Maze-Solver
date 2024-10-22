@@ -15,61 +15,109 @@ The implemented algorithms include classic and modern maze-solving techniques:
 
 Each algorithm is carefully tested and verified for correctness. In the `solutions` folder, you can find PNG files that visually represent the solutions of four different mazes using each implemented algorithm. These images provide a clear illustration of how each algorithm navigates through the mazes.
 
-## Maze Solutions
+## Maze 1 Solutions
 
-Below, you will find the solutions for each of the four mazes using the implemented algorithms. Click on the image to view it in full size.
+### Depth-First Search (DFS)
+![DFS Solution for Maze 1](solutions/maze1_dfs.png)
 
-### Maze 1 Solutions
+### Breadth-First Search (BFS)
+![BFS Solution for Maze 1](solutions/maze1_bfs.png)
 
-| Algorithm | Solution Image |
-|-----------|----------------|
-| Depth-First Search (DFS) | ![DFS Solution for Maze 1](solutions/maze1_dfs.png) |
-| Breadth-First Search (BFS) | ![BFS Solution for Maze 1](solutions/maze1_bfs.png) |
-| Dijkstra's Algorithm | ![Dijkstra's Solution for Maze 1](solutions/maze1_dijkstra.png) |
-| A* Algorithm | ![A* Solution for Maze 1](solutions/maze1_a_star.png) |
-| Greedy Best-First Search | ![Greedy BFS Solution for Maze 1](solutions/maze1_greedy.png) |
-| Recursive Backtracking | ![Recursive Backtracking Solution for Maze 1](solutions/maze1_recursive.png) |
-| Wall Follower Algorithm | ![Wall Follower Solution for Maze 1](solutions/maze1_wall_follower.png) |
-| Dead-End Filling | ![Dead-End Filling Solution for Maze 1](solutions/maze1_dead_end_filling.png) |
+### Dijkstra's Algorithm
+![Dijkstra's Solution for Maze 1](solutions/maze1_dijkstra.png)
 
-### Maze 2 Solutions
+### A* Algorithm
+![A* Solution for Maze 1](solutions/maze1_a_star.png)
 
-| Algorithm | Solution Image |
-|-----------|----------------|
-| Depth-First Search (DFS) | ![DFS Solution for Maze 2](solutions/maze2_dfs.png) |
-| Breadth-First Search (BFS) | ![BFS Solution for Maze 2](solutions/maze2_bfs.png) |
-| Dijkstra's Algorithm | ![Dijkstra's Solution for Maze 2](solutions/maze2_dijkstra.png) |
-| A* Algorithm | ![A* Solution for Maze 2](solutions/maze2_a_star.png) |
-| Greedy Best-First Search | ![Greedy BFS Solution for Maze 2](solutions/maze2_greedy.png) |
-| Recursive Backtracking | ![Recursive Backtracking Solution for Maze 2](solutions/maze2_recursive.png) |
-| Wall Follower Algorithm | ![Wall Follower Solution for Maze 2](solutions/maze2_wall_follower.png) |
-| Dead-End Filling | ![Dead-End Filling Solution for Maze 2](solutions/maze2_dead_end_filling.png) |
+### Greedy Best-First Search
+![Greedy BFS Solution for Maze 1](solutions/maze1_greedy.png)
 
-### Maze 3 Solutions
+### Recursive Backtracking
+![Recursive Backtracking Solution for Maze 1](solutions/maze1_recursive.png)
 
-| Algorithm | Solution Image |
-|-----------|----------------|
-| Depth-First Search (DFS) | ![DFS Solution for Maze 3](solutions/maze3_dfs.png) |
-| Breadth-First Search (BFS) | ![BFS Solution for Maze 3](solutions/maze3_bfs.png) |
-| Dijkstra's Algorithm | ![Dijkstra's Solution for Maze 3](solutions/maze3_dijkstra.png) |
-| A* Algorithm | ![A* Solution for Maze 3](solutions/maze3_a_star.png) |
-| Greedy Best-First Search | ![Greedy BFS Solution for Maze 3](solutions/maze3_greedy.png) |
-| Recursive Backtracking | ![Recursive Backtracking Solution for Maze 3](solutions/maze3_recursive.png) |
-| Wall Follower Algorithm | ![Wall Follower Solution for Maze 3](solutions/maze3_wall_follower.png) |
-| Dead-End Filling | ![Dead-End Filling Solution for Maze 3](solutions/maze3_dead_end_filling.png) |
+### Wall Follower Algorithm
+![Wall Follower Solution for Maze 1](solutions/maze1_wall_follower.png)
 
-### Maze 4 Solutions
+### Dead-End Filling
+![Dead-End Filling Solution for Maze 1](solutions/maze1_dead_end_filling.png)
 
-| Algorithm | Solution Image |
-|-----------|----------------|
-| Depth-First Search (DFS) | ![DFS Solution for Maze 4](solutions/maze4_dfs.png) |
-| Breadth-First Search (BFS) | ![BFS Solution for Maze 4](solutions/maze4_bfs.png) |
-| Dijkstra's Algorithm | ![Dijkstra's Solution for Maze 4](solutions/maze4_dijkstra.png) |
-| A* Algorithm | ![A* Solution for Maze 4](solutions/maze4_a_star.png) |
-| Greedy Best-First Search | ![Greedy BFS Solution for Maze 4](solutions/maze4_greedy.png) |
-| Recursive Backtracking | ![Recursive Backtracking Solution for Maze 4](solutions/maze4_recursive.png) |
-| Wall Follower Algorithm | ![Wall Follower Solution for Maze 4](solutions/maze4_wall_follower.png) |
-| Dead-End Filling | ![Dead-End Filling Solution for Maze 4](solutions/maze4_dead_end_filling.png) |
+## Maze 2 Solutions
+
+### Depth-First Search (DFS)
+![DFS Solution for Maze 2](solutions/maze2_dfs.png)
+
+### Breadth-First Search (BFS)
+![BFS Solution for Maze 2](solutions/maze2_bfs.png)
+
+### Dijkstra's Algorithm
+![Dijkstra's Solution for Maze 2](solutions/maze2_dijkstra.png)
+
+### A* Algorithm
+![A* Solution for Maze 2](solutions/maze2_a_star.png)
+
+### Greedy Best-First Search
+![Greedy BFS Solution for Maze 2](solutions/maze2_greedy.png)
+
+### Recursive Backtracking
+![Recursive Backtracking Solution for Maze 2](solutions/maze2_recursive.png)
+
+### Wall Follower Algorithm
+![Wall Follower Solution for Maze 2](solutions/maze2_wall_follower.png)
+
+### Dead-End Filling
+![Dead-End Filling Solution for Maze 2](solutions/maze2_dead_end_filling.png)
+
+## Maze 3 Solutions
+
+### Depth-First Search (DFS)
+![DFS Solution for Maze 3](solutions/maze3_dfs.png)
+
+### Breadth-First Search (BFS)
+![BFS Solution for Maze 3](solutions/maze3_bfs.png)
+
+### Dijkstra's Algorithm
+![Dijkstra's Solution for Maze 3](solutions/maze3_dijkstra.png)
+
+### A* Algorithm
+![A* Solution for Maze 3](solutions/maze3_a_star.png)
+
+### Greedy Best-First Search
+![Greedy BFS Solution for Maze 3](solutions/maze3_greedy.png)
+
+### Recursive Backtracking
+![Recursive Backtracking Solution for Maze 3](solutions/maze3_recursive.png)
+
+### Wall Follower Algorithm
+![Wall Follower Solution for Maze 3](solutions/maze3_wall_follower.png)
+
+### Dead-End Filling
+![Dead-End Filling Solution for Maze 3](solutions/maze3_dead_end_filling.png)
+
+## Maze 4 Solutions
+
+### Depth-First Search (DFS)
+![DFS Solution for Maze 4](solutions/maze4_dfs.png)
+
+### Breadth-First Search (BFS)
+![BFS Solution for Maze 4](solutions/maze4_bfs.png)
+
+### Dijkstra's Algorithm
+![Dijkstra's Solution for Maze 4](solutions/maze4_dijkstra.png)
+
+### A* Algorithm
+![A* Solution for Maze 4](solutions/maze4_a_star.png)
+
+### Greedy Best-First Search
+![Greedy BFS Solution for Maze 4](solutions/maze4_greedy.png)
+
+### Recursive Backtracking
+![Recursive Backtracking Solution for Maze 4](solutions/maze4_recursive.png)
+
+### Wall Follower Algorithm
+![Wall Follower Solution for Maze 4](solutions/maze4_wall_follower.png)
+
+### Dead-End Filling
+![Dead-End Filling Solution for Maze 4](solutions/maze4_dead_end_filling.png)
 
 ## How to Run the Code
 
