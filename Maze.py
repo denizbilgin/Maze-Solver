@@ -1,12 +1,15 @@
-from typing import Tuple, List, Union, Type
+from typing import Tuple, List, Union
 from Node import Node
 from PIL import Image, ImageDraw
 from Fringe import Fringe
 from HeuristicFringe import HeuristicFringe
-from HandSearch import HandSearch
 
 
 class Maze:
+    """
+    Represents a maze for pathfinding, with capabilities to load a maze from a file,
+    solve it using a given search algorithm, and output the solution visually.
+    """
     def __init__(self, filename: str, fringe: Fringe) -> None:
         self.filename: str = filename
         # Reading given maze
@@ -17,6 +20,14 @@ class Maze:
         self.fringe = fringe
 
     def __perceive_maze(self, filename: str) -> None:
+        """
+        Reads the maze structure from the specified file and initializes the maze attributes.
+
+        The maze file should contain exactly one start point ("A") and one goal point ("B").
+        Walls are represented by any character other than spaces (" "), "A", or "B".
+        :param filename: The name of the maze file to load.
+        :return: None
+        """
         if ".txt" not in filename:
             raise TypeError("Type of the maze must be a text file (txt).")
 
@@ -54,6 +65,11 @@ class Maze:
             self.walls.append(row)
 
     def print_maze(self) -> None:
+        """
+        Prints the current maze to the console, showing the start point (A), goal point (B),
+        walls, and solution path if it has been found.
+        :return: None
+        """
         solution: Union[List[Tuple[int, int]], None] = self.solution[1] if self.solution is not None else None
 
         print()
@@ -73,6 +89,14 @@ class Maze:
         print()
 
     def neighbors(self, state: Tuple[int, int]) -> List[Tuple[str, Tuple[int, int]]]:
+        """
+        Returns the valid neighboring states for a given state.
+
+        The neighboring states are those that are within the bounds of the maze and are not walls.
+        :param state: The current state in the maze (x, y).
+        :return: A list of tuples where the first element is the action (e.g., "up", "down")
+            and the second element is the neighboring state.
+        """
         row, col = state
         candidates: List[Tuple[str, Tuple[int, int]]] = [
             ("up",    (row - 1, col)),
@@ -80,15 +104,6 @@ class Maze:
             ("left",  (row, col - 1)),
             ("right", (row, col + 1))
         ]
-
-        # Update candidates if hand search algorithms are used
-        if isinstance(self.fringe, HandSearch):
-            candidates = [
-                ("left", (row, col - 1)),
-                ("down", (row + 1, col)),
-                ("up", (row - 1, col)),
-                ("right", (row, col + 1))
-            ]
 
         result: List[Tuple[str, Tuple[int, int]]] = []
         for action, (r, c) in candidates:
@@ -98,7 +113,10 @@ class Maze:
 
     def solve(self) -> None:
         """
-        Finds a solution to maze, if one exists.
+        Solves the maze using the specified search algorithm.
+
+        The algorithm continues until a solution is found or all possible states are explored.
+        If a solution is found, the sequence of actions and cells leading to the goal is stored.
         :return: None
         """
         # Keeping track of number of states explored
@@ -144,7 +162,15 @@ class Maze:
                     child = Node(state, node, action)
                     self.fringe.add(child)
 
-    def output_image(self, show_solution: bool = True, show_explored: bool = False):
+    def output_image(self, show_solution: bool = True, show_explored: bool = False) -> None:
+        """
+        Outputs an image of the maze, showing the start, goal, solution path, and optionally the explored nodes.
+
+        The image is saved as a PNG file in the "solutions" directory.
+        :param show_solution: If True, the solution path will be displayed in the image (default is True).
+        :param show_explored: If True, the explored nodes will be displayed in the image (default is False).
+        :return: None
+        """
         filename = "solutions/" + self.filename[6:11] + "_" + self.fringe.__class__.__name__ + "_" + str(self.num_explored) + ".png"
 
         cell_size: int = 50

@@ -5,12 +5,11 @@ from GreedyBestFirstSearch import GreedyBestFirstSearch
 from IterativeDeepeningSearch import IterativeDeepeningSearch
 from UniformCostSearch import UniformCostSearch
 from BeamSearch import BeamSearch
-from HandSearch import HandSearch
 from Maze import Maze
 
 
 if __name__ == '__main__':
-    fringe = HandSearch(False)
+    fringe = UniformCostSearch()
     maze = Maze("mazes/maze1.txt", fringe)
 
     print("Maze: ")
