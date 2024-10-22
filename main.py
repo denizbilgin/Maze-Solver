@@ -10,7 +10,7 @@ from Maze import Maze
 
 if __name__ == '__main__':
     fringe = UniformCostSearch()
-    maze = Maze("mazes/maze1.txt", fringe)
+    maze = Maze("mazes/maze4.txt", fringe)
 
     print("Maze: ")
     maze.print_maze()
