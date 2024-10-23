@@ -15,31 +15,28 @@ The implemented algorithms include classic and modern maze-solving techniques:
 
 Each algorithm is carefully tested and verified for correctness. In the `solutions` folder, you can find PNG files that visually represent the solutions of four different mazes using each implemented algorithm. These images provide a clear illustration of how each algorithm navigates through the mazes.
 
-## Maze 1 Solutions
+## Maze 2 Solutions
 
 ### Depth-First Search (DFS)
-![DFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dfs.png)
+![DFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_DepthFirstSearch_194.png)
 
 ### Breadth-First Search (BFS)
-![BFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_bfs.png)
+![BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BreadthFirstSearch_77.png)
 
-### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dijkstra.png)
+### A* Search
+![A* Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_AStarSearch_59.png)
 
-### A* Algorithm
-![A* Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_a_star.png)
+### Beam Search
+![Beam Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BeamSearch_49.png)
 
 ### Greedy Best-First Search
-![Greedy BFS Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_greedy.png)
+![Greedy Best-First Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_GreedyBestFirstSearch_54.png)
 
-### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_recursive.png)
+### Iterative Deepening Search
+![Iterative Deepening Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_IterativeDeepeningSearch_69.png)
 
-### Wall Follower Algorithm
-![Wall Follower Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_wall_follower.png)
-
-### Dead-End Filling
-![Dead-End Filling Solution for Maze 1](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze1_dead_end_filling.png)
+### Uniform Cost Search
+![Uniform Cost Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_UniformCostSearch_77.png)
 
 ## Maze 2 Solutions
 
