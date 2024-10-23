@@ -6,118 +6,138 @@ The implemented algorithms include classic and modern maze-solving techniques:
 
 - **Depth-First Search (DFS)**
 - **Breadth-First Search (BFS)**
-- **Dijkstra's Algorithm**
-- **A* (A-Star) Algorithm**
+- **A-Star Search**
+- **Beam Search**
 - **Greedy Best-First Search**
-- **Recursive Backtracking**
-- **Wall Follower Algorithm**
-- **Dead-End Filling**
+- **Iterative Deepening Search**
+- **Uniform Cost Search (UCS)**
 
-Each algorithm is carefully tested and verified for correctness. In the `solutions` folder, you can find PNG files that visually represent the solutions of four different mazes using each implemented algorithm. These images provide a clear illustration of how each algorithm navigates through the mazes.
+In the `solutions` folder, you can find PNG files that visually represent the solutions of four different mazes using each implemented algorithm. These images provide a clear illustration of how each algorithm navigates through the mazes.
 
-## Maze 2 Solutions
-
-### Depth-First Search (DFS)
-![DFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_DepthFirstSearch_194.png)
-
-### Breadth-First Search (BFS)
-![BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BreadthFirstSearch_77.png)
-
-### A* Search
-![A* Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_AStarSearch_59.png)
-
-### Beam Search
-![Beam Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BeamSearch_49.png)
-
-### Greedy Best-First Search
-![Greedy Best-First Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_GreedyBestFirstSearch_54.png)
-
-### Iterative Deepening Search
-![Iterative Deepening Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_IterativeDeepeningSearch_69.png)
-
-### Uniform Cost Search
-![Uniform Cost Search Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_UniformCostSearch_77.png)
-
-## Maze 2 Solutions
-
-### Depth-First Search (DFS)
-![DFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dfs.png)
-
-### Breadth-First Search (BFS)
-![BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_bfs.png)
-
-### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dijkstra.png)
-
-### A* Algorithm
-![A* Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_a_star.png)
-
-### Greedy Best-First Search
-![Greedy BFS Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_greedy.png)
-
-### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_recursive.png)
-
-### Wall Follower Algorithm
-![Wall Follower Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_wall_follower.png)
-
-### Dead-End Filling
-![Dead-End Filling Solution for Maze 2](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze2_dead_end_filling.png)
-
-## Maze 3 Solutions
-
-### Depth-First Search (DFS)
-![DFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dfs.png)
-
-### Breadth-First Search (BFS)
-![BFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_bfs.png)
-
-### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dijkstra.png)
-
-### A* Algorithm
-![A* Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_a_star.png)
-
-### Greedy Best-First Search
-![Greedy BFS Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_greedy.png)
-
-### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_recursive.png)
-
-### Wall Follower Algorithm
-![Wall Follower Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_wall_follower.png)
-
-### Dead-End Filling
-![Dead-End Filling Solution for Maze 3](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze3_dead_end_filling.png)
-
-## Maze 4 Solutions
-
-### Depth-First Search (DFS)
-![DFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dfs.png)
-
-### Breadth-First Search (BFS)
-![BFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_bfs.png)
-
-### Dijkstra's Algorithm
-![Dijkstra's Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dijkstra.png)
-
-### A* Algorithm
-![A* Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_a_star.png)
-
-### Greedy Best-First Search
-![Greedy BFS Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_greedy.png)
-
-### Recursive Backtracking
-![Recursive Backtracking Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_recursive.png)
-
-### Wall Follower Algorithm
-![Wall Follower Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_wall_follower.png)
-
-### Dead-End Filling
-![Dead-End Filling Solution for Maze 4](https://github.com/denizbilgin/Maze-Solver/tree/main/solutions/maze4_dead_end_filling.png)
+You can test these algorithms with your own created mazes and get a clearer idea of ​​how they work. In the `mazes` folder you can find a total of 4 mazes that measure different things that I use to test the algorithms. You can also create your own maze as a txt file. The `__perceive_maze()` function in the `maze.py` file sets some rules to detect the maze you created.
+- There should be only one starting point in a maze and that point should be indicated with the symbol "A".
+- There should be only one ending (target) point in a maze and that point should be indicated with the symbol "B".
+- Walls are marked with "#" signs.
+- The " ", that is, the empty spaces, represent the paths that can be followed.
+Then you need to put your own maze file to `mazes` folder. Finally, you can run it!
 
 ## How to Run the Code
 
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/denizbilgin/Maze-Solver.git
+2. Select algorithm and maze in `main.py` file:
+   ```bash
+   fringe = UniformCostSearch()
+   maze = Maze("mazes/maze4.txt", fringe)
+
+<br>
+
+## Maze 2 Solutions
+
+<table>
+  <tr>
+    <td><b>Depth-First Search (DFS)</b></td>
+    <td><b>Breadth-First Search (BFS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_DepthFirstSearch_194.png" alt="DFS Solution for Maze 2" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BreadthFirstSearch_77.png" alt="BFS Solution for Maze 2" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>A* Search</b></td>
+    <td><b>Beam Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_AStarSearch_59.png" alt="A* Search Solution for Maze 2" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_BeamSearch_49.png" alt="Beam Search Solution for Maze 2" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Greedy Best-First Search</b></td>
+    <td><b>Iterative Deepening Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_GreedyBestFirstSearch_54.png" alt="Greedy BFS Solution for Maze 2" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_IterativeDeepeningSearch_69.png" alt="Iterative Deepening Search Solution for Maze 2" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Uniform Cost Search (UCS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze2_UniformCostSearch_77.png" alt="Uniform Cost Search Solution for Maze 2" width="400"></td>
+  </tr>
+</table>
+
+<br><br>
+
+## Maze 3 Solutions
+
+<table>
+  <tr>
+    <td><b>Depth-First Search (DFS)</b></td>
+    <td><b>Breadth-First Search (BFS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_DepthFirstSearch_17.png" alt="DFS Solution for Maze 3" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_BreadthFirstSearch_6.png" alt="BFS Solution for Maze 3" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>A* Search</b></td>
+    <td><b>Beam Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_AStarSearch_5.png" alt="A* Search Solution for Maze 3" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_BeamSearch_5.png" alt="Beam Search Solution for Maze 3" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Greedy Best-First Search</b></td>
+    <td><b>Iterative Deepening Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_GreedyBestFirstSearch_5.png" alt="Greedy BFS Solution for Maze 3" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_IterativeDeepeningSearch_8.png" alt="Iterative Deepening Search Solution for Maze 3" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Uniform Cost Search (UCS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze3_UniformCostSearch_6.png" alt="Uniform Cost Search Solution for Maze 3" width="400"></td>
+  </tr>
+</table>
+
+<br><br>
+
+## Maze 4 Solutions
+
+<table>
+  <tr>
+    <td><b>Depth-First Search (DFS)</b></td>
+    <td><b>Breadth-First Search (BFS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_DepthFirstSearch_285.png" alt="DFS Solution for Maze 4" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_BreadthFirstSearch_386.png" alt="BFS Solution for Maze 4" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>A* Search</b></td>
+    <td><b>Beam Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_AStarSearch_261.png" alt="A* Search Solution for Maze 4" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_BeamSearch_125.png" alt="Beam Search Solution for Maze 4" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Greedy Best-First Search</b></td>
+    <td><b>Iterative Deepening Search</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_GreedyBestFirstSearch_103.png" alt="Greedy BFS Solution for Maze 4" width="400"></td>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_IterativeDeepeningSearch_261.png" alt="Iterative Deepening Search Solution for Maze 4" width="400"></td>
+  </tr>
+  <tr>
+    <td><b>Uniform Cost Search (UCS)</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/denizbilgin/Maze-Solver/blob/main/solutions/maze4_UniformCostSearch_386.png" alt="Uniform Cost Search Solution for Maze 4" width="400"></td>
+  </tr>
+</table>
