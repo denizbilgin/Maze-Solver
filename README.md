@@ -15,9 +15,9 @@ The implemented algorithms include classic and modern maze-solving techniques:
 In the `solutions` folder, you can find PNG files that visually represent the solutions of four different mazes using each implemented algorithm. These images provide a clear illustration of how each algorithm navigates through the mazes.
 
 You can test these algorithms with your own created mazes and get a clearer idea of ​​how they work. In the `mazes` folder you can find a total of 4 mazes that measure different things that I use to test the algorithms. You can also create your own maze as a txt file. The `__perceive_maze()` function in the `maze.py` file sets some rules to detect the maze you created.
-- There should be only one starting point in a maze and that point should be indicated with the symbol "A".
-- There should be only one ending (target) point in a maze and that point should be indicated with the symbol "B".
-- Walls are marked with "#" signs.
+- There should be only one starting point in a maze and that point should be indicated with the symbol `A`.
+- There should be only one ending (target) point in a maze and that point should be indicated with the symbol `B`.
+- Walls are marked with `#` signs.
 - The " ", that is, the empty spaces, represent the paths that can be followed.
 Then you need to put your own maze file to `mazes` folder. Finally, you can run it!
 
